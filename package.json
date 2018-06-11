@@ -1,13 +1,16 @@
 {
   "name": "vue-toast-cpn",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Toast component for Vue",
   "author": "xurna",
   "private": false,
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/xurna/vue-toast-cpn.git"
+  },
+  "scripts": {
+    "build": "webpack --config ./build/webpack.client.config.js --progress --hide-modules"
   },
   "keywords": [
     "vue",
@@ -15,5 +18,33 @@
     "toast",
     "vue-toast"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "latest",
+    "babel-preset-env": "^1.5.2",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "file-loader": "^0.9.0",
+    "lolex": "^1.5.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "vue": "^2.2.6",
+    "vue-hot-reload-api": "^2.0.8",
+    "vue-loader": "^10.0.0",
+    "vue-style-loader": "^2.0.0",
+    "vue-template-compiler": "^2.1.0",
+    "webpack": "^2.2.0",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^2.2.0",
+    "webpack-merge": "^4.1.0"
+  }
 }
